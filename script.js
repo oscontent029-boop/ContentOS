@@ -69,17 +69,6 @@ const closePlanModal = () => {
 planModalClose.addEventListener('click', closePlanModal);
 planModal.addEventListener('click', (e) => { if(e.target === planModal) closePlanModal(); });
 
-const benefits = [
-  {t:'IA con contexto real',d:'No es un chat genérico: cada generación parte de la estrategia y el público real de la marca.',icon:'<path d="M12 2.5l2.1 4.5 4.9.7-3.5 3.5.8 5-4.3-2.3-4.3 2.3.8-5-3.5-3.5 4.9-.7z"/>',color:'var(--orange)'},
-  {t:'Métricas reales, no capturas',d:'Los números salen directo de Instagram, medidos todos los días, sin que nadie tenga que sacar una captura.',icon:'<path d="M4 19V10M11 19V5M18 19v-7"/><path d="M3 19h18"/>',color:'var(--violet)'},
-  {t:'Todo en un solo lugar',d:'Estrategia, tareas, archivos y aprobaciones viven juntos, ligados a la misma publicación.',icon:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',color:'var(--pink)'},
-  {t:'Aprobación sin fricción',d:'El cliente entra a su portal, aprueba o rechaza con motivo, y ahí termina su parte.',icon:'<path d="M9 12.5l2.2 2.2L16 9.5"/><circle cx="12" cy="12" r="9.2"/>',color:'var(--orange)'},
-];
-
-const iconWrap = (svgInner,bg,color) =>
-  `<div class="mod-icon" style="--iconbg:${bg};--iconcolor:${color}"><svg viewBox="0 0 24 24">${svgInner}</svg></div>`;
-
-
 // ---------- ver todos los módulos ----------
 const modShowMoreBtn = document.getElementById('modShowMoreBtn');
 if(modShowMoreBtn){
@@ -182,15 +171,6 @@ document.querySelectorAll('.role-card').forEach(card => {
 });
 roleModalClose.addEventListener('click', closeRoleModal);
 roleModal.addEventListener('click', (e) => { if(e.target === roleModal) closeRoleModal(); });
-
-
-const team = [
-  {name:'Emilia Lupidi',role:'Marketing Digital',phrase:'Piensa cada campaña desde el problema real de la agencia.',photo:'imagenes/equipo/emilia.png',social:'https://www.instagram.com/emilialupidi11/'},
-  {name:'Martina Gagliesi',role:'Marketing Digital',phrase:'Convierte la estrategia en algo que se entiende de una.',photo:'imagenes/equipo/martina.png',social:'https://www.instagram.com/martigagliesi/'},
-  {name:'Máximo Bertaina',role:'Analista en Sistemas',phrase:'Arma la arquitectura para que todo funcione sin trabarse.',photo:'imagenes/equipo/maxi.jpeg',social:'https://www.instagram.com/maxi_bertaina/'},
-  {name:'Ayrton Peralta',role:'Analista en Sistemas',phrase:'Resuelve lo que se rompe, antes de que se note.',photo:'imagenes/equipo/capi.png',social:'https://www.instagram.com/ayrton_dingo/'},
-];
-const igIcon = '<svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.4.5.6.2 1 .5 1.5.9.4.4.7.9.9 1.5.2.4.4 1.2.5 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.4-.2.6-.5 1-.9 1.5-.4.4-.9.7-1.5.9-.4.2-1.2.4-2.4.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.4-.5-.6-.2-1-.5-1.5-.9-.4-.4-.7-.9-.9-1.5-.2-.4-.4-1.2-.5-2.4-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-2 .5-2.4.2-.6.5-1 .9-1.5.4-.4.9-.7 1.5-.9.4-.2 1.2-.4 2.4-.5 1.3-.1 1.7-.1 4.9-.1M12 0C8.7 0 8.3 0 7 .1 5.7.1 4.8.3 4 .6c-.8.3-1.5.7-2.2 1.4C1.1 2.7.7 3.4.4 4.2.1 5 0 5.9 0 7.2 0 8.4 0 8.8 0 12s0 3.6.1 4.8c.1 1.3.2 2.2.5 3 .3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.7.4 3 .5C8.3 24 8.7 24 12 24s3.6 0 4.8-.1c1.3-.1 2.2-.2 3-.5.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.4-1.7.5-3 .1-1.2.1-1.6.1-4.8s0-3.6-.1-4.8c-.1-1.3-.2-2.2-.5-3-.3-.8-.7-1.5-1.4-2.2C21.3 1.1 20.6.7 19.8.4c-.8-.3-1.7-.4-3-.5C15.6 0 15.2 0 12 0z"/><path d="M12 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8z"/><circle cx="18.4" cy="5.6" r="1.4"/></svg>';
 
 
 document.querySelectorAll('.faq-q').forEach(btn => {
