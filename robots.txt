@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://contentos.com.ar/sitemap.xml
