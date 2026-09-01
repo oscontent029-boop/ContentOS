@@ -92,7 +92,6 @@ const openModModal = (i) => {
   modModalNum.textContent = 'Módulo ' + m.n;
   modModalTitle.textContent = m.title;
   modModalDesc.textContent = m.long || m.desc;
-  modModalMedia.classList.remove('is-video');
   if(m.video && m.image){
     modModalMedia.innerHTML = `
       <img src="${m.image}" alt="Captura del módulo ${m.title}" class="mod-modal-img active">
@@ -108,16 +107,13 @@ const openModModal = (i) => {
         modModalMedia.querySelectorAll('.mod-modal-toggle-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         if(btn.dataset.show === 'video'){
-          videoEl.classList.add('active'); imgEl.classList.remove('active');
-          modModalMedia.classList.add('is-video'); videoEl.play();
+          videoEl.classList.add('active'); imgEl.classList.remove('active'); videoEl.play();
         }else{
-          videoEl.classList.remove('active'); imgEl.classList.add('active');
-          modModalMedia.classList.remove('is-video'); videoEl.pause();
+          videoEl.classList.remove('active'); imgEl.classList.add('active'); videoEl.pause();
         }
       });
     });
   }else if(m.video){
-    modModalMedia.classList.add('is-video');
     modModalMedia.innerHTML = `<video src="${m.video}" autoplay muted loop playsinline class="mod-modal-video active"></video>`;
   }else if(m.image){
     modModalMedia.innerHTML = `<img src="${m.image}" alt="Captura del módulo ${m.title}">`;
