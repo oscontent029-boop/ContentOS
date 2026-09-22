@@ -670,6 +670,9 @@ footer{background:transparent;padding:56px 0 32px;border-top:1px solid rgba(28,2
   .hero-title{font-size:clamp(26px,8vw,36px);}
 
   .mod-card{width:88%;min-width:88%;}
+  /* en celular, el modal de módulo queda solo con texto (sin foto ni video) */
+  .mod-modal-media{display:none;}
+  .mod-modal-body{padding:44px 22px 26px;}
 
   .roles-grid{grid-template-columns:1fr;}
   .benefits-grid{grid-template-columns:1fr;}
