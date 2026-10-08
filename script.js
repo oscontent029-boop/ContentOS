@@ -24,15 +24,15 @@ const roles = [
   {t:'Cliente',d:'Entra a su portal simplificado y aprueba o rechaza sin ver el resto de la agencia.',long:'El Cliente accede únicamente a su Portal: ve las publicaciones de su propia marca (sin borradores) y las aprueba o rechaza con un motivo si corresponde. No ve nada más de la agencia — ni otras marcas, ni el equipo, ni la parte interna.',can:['Entra solo a su Portal','Ve las publicaciones de su marca (sin borradores)','Aprueba o rechaza con motivo','No ve otras marcas, ni el equipo, ni la parte interna'],color:'var(--pink)',icon:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>'},
 ];
 const plans = [
-  {name:'Starter',price:'US$29',tagline:'Freelancers y CM',badge:'',marcas:'3',usuarios:'1',
+  {name:'Starter',price:'US$0',tagline:'Freelancers y CM',badge:'',marcas:'3',usuarios:'1',
    top:[{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'IA Estratégica y Campañas',on:false},{t:'Automatizaciones',on:false},{t:'Soporte prioritario',on:false}],
    full:[{t:'Usuarios "Marca" ilimitados',on:true},{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'Métricas de Instagram',on:true},{t:'IA Estratégica y Campañas',on:false},{t:'Roles y permisos',on:false},{t:'Producción y tareas',on:false},{t:'Informes mensuales',on:false},{t:'Automatizaciones',on:false},{t:'Soporte',on:false}],
    cta:'Contratar',ctaStyle:'outline'},
-  {name:'Agency',price:'US$79',tagline:'Agencias chicas',badge:'El más elegido',marcas:'10',usuarios:'5',
+  {name:'Agency',price:'US$0',tagline:'Agencias chicas',badge:'El más elegido',marcas:'10',usuarios:'5',
    top:[{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'IA Estratégica y Campañas',on:true},{t:'Automatizaciones',on:true},{t:'Soporte prioritario',on:false}],
    full:[{t:'Usuarios "Marca" ilimitados',on:true},{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'Métricas de Instagram',on:true},{t:'IA Estratégica y Campañas',on:true},{t:'Roles y permisos',on:true},{t:'Producción y tareas',on:true},{t:'Informes mensuales',on:true},{t:'Automatizaciones',on:true},{t:'Soporte',on:false}],
    cta:'Contratar',ctaStyle:'filled',featured:true},
-  {name:'Agency Pro',price:'US$149',tagline:'Agencias con muchas marcas',badge:'',marcas:'30',usuarios:'15',
+  {name:'Agency Pro',price:'US$0',tagline:'Agencias con muchas marcas',badge:'',marcas:'30',usuarios:'15',
    top:[{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'IA Estratégica y Campañas',on:true},{t:'Automatizaciones',on:true},{t:'Soporte prioritario',on:true}],
    full:[{t:'Usuarios "Marca" ilimitados',on:true},{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'Métricas de Instagram',on:true},{t:'IA Estratégica y Campañas',on:true},{t:'Roles y permisos',on:true},{t:'Producción y tareas',on:true},{t:'Informes mensuales',on:true},{t:'Automatizaciones',on:true},{t:'Soporte prioritario',on:true}],
    cta:'Contratar',ctaStyle:'outline'},
