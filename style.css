@@ -213,6 +213,109 @@ section{padding:104px 0;position:relative;}
 .problem .ps-mark{background:rgba(28,28,30,.07);color:rgba(28,28,30,.4);}
 .solution .ps-mark{background:var(--cream);color:var(--violet);}
 
+/* ---------- features destacados ---------- */
+.feat-intro{max-width:620px;font-size:16.5px;line-height:1.5;color:rgba(28,28,30,.62);margin:-6px 0 48px;}
+.feat-kicker{display:block;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--violet);margin-bottom:12px;}
+
+.feat-grid{display:flex;flex-direction:column;gap:28px;margin-bottom:28px;}
+.feat-panel{
+  position:relative;display:flex;align-items:center;gap:56px;
+  background:#fff;border:1px solid rgba(28,28,30,.07);border-radius:28px;
+  padding:48px;box-shadow:0 1px 3px rgba(28,28,30,.04);
+  overflow:hidden;transition:box-shadow .35s var(--ease);
+}
+.feat-panel:hover{box-shadow:0 28px 54px -30px rgba(28,28,30,.22);}
+.feat-panel-reverse{flex-direction:row-reverse;}
+.feat-text{flex:0 0 36%;max-width:360px;}
+.feat-text h2{font-size:clamp(21px,2.2vw,27px);line-height:1.22;margin-bottom:14px;color:var(--ink);}
+.feat-text p{font-size:15px;line-height:1.65;color:rgba(28,28,30,.64);}
+.feat-visual{position:relative;flex:1;min-width:0;}
+
+.feat-window{
+  background:var(--offwhite);border:1px solid rgba(28,28,30,.08);border-radius:18px;
+  padding:22px;box-shadow:0 24px 48px -28px rgba(28,28,30,.3);
+}
+.feat-window-head{display:flex;align-items:center;gap:6px;margin-bottom:18px;}
+.feat-dot{width:8px;height:8px;border-radius:50%;background:var(--d);}
+.feat-window-title{margin-left:6px;font-family:var(--font-mono);font-size:11px;color:rgba(28,28,30,.38);}
+
+.feat-float{
+  position:absolute;background:#fff;border-radius:16px;padding:18px 20px;
+  box-shadow:0 26px 50px -18px rgba(28,28,30,.3);
+  transition:transform .4s var(--ease);
+}
+.feat-panel:hover .feat-float{transform:translateY(-6px);}
+.feat-float-label{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--violet);margin-bottom:8px;}
+.feat-float p{font-size:12.5px;line-height:1.5;color:rgba(28,28,30,.68);}
+
+/* Centro de IA */
+.feat-ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.feat-ai-card{position:relative;background:#fff;border:1px solid rgba(28,28,30,.07);border-radius:14px;padding:16px;}
+.feat-ai-icon{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;margin-bottom:10px;background:var(--bg);}
+.feat-ai-icon svg{width:16px;height:16px;stroke:var(--c);fill:none;stroke-width:1.8;}
+.feat-ai-card b{display:block;font-size:13.5px;color:var(--ink);margin-bottom:2px;}
+.feat-ai-card p{font-size:11.5px;color:rgba(28,28,30,.5);margin-bottom:12px;}
+.feat-ai-btn{display:inline-block;font-family:var(--font-mono);font-size:10.5px;padding:6px 12px;border-radius:100px;background:rgba(28,28,30,.05);color:var(--ink);}
+.feat-ai-badge{position:absolute;top:12px;right:12px;font-family:var(--font-mono);font-size:9px;letter-spacing:.04em;text-transform:uppercase;background:var(--cream);color:var(--graphite);padding:3px 8px;border-radius:100px;}
+.feat-float-ai{top:-14px;right:-8%;width:62%;max-width:230px;}
+
+/* Vista previa de Instagram */
+.feat-ig-profile{display:flex;align-items:center;gap:14px;margin-bottom:16px;}
+.feat-ig-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--violet),var(--orange));flex-shrink:0;}
+.feat-ig-stats{display:flex;gap:16px;flex-wrap:wrap;}
+.feat-ig-stats div{display:flex;flex-direction:column;}
+.feat-ig-stats b{font-size:13px;color:var(--ink);}
+.feat-ig-stats span{font-size:10px;color:rgba(28,28,30,.48);}
+.feat-ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;}
+.feat-ig-post{position:relative;aspect-ratio:1;border-radius:4px;background:var(--c);opacity:.85;}
+.feat-ig-planned{outline:2px dashed rgba(255,255,255,.7);outline-offset:-4px;}
+.feat-ig-planned span{position:absolute;inset:auto 4px 4px 4px;font-family:var(--font-mono);font-size:7.5px;letter-spacing:.02em;color:#fff;background:rgba(28,28,30,.45);border-radius:4px;padding:2px 4px;text-align:center;}
+
+/* Métricas + IA de Métricas */
+.feat-kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px;}
+.feat-kpi{background:#fff;border:1px solid rgba(28,28,30,.07);border-radius:12px;padding:10px 12px;}
+.feat-kpi span{display:block;font-size:10px;color:rgba(28,28,30,.48);margin-bottom:4px;}
+.feat-kpi b{display:block;font-family:var(--font-mono);font-size:15px;color:var(--ink);}
+.feat-chart{width:100%;height:auto;display:block;}
+.feat-chart-line{fill:none;stroke:var(--violet-light);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+.feat-chart-fill{stroke:none;fill:var(--violet-light);opacity:.15;}
+.feat-float-metrics{bottom:-16px;right:-8%;width:68%;max-width:260px;}
+.feat-float-row{margin-bottom:10px;}
+.feat-float-row:last-child{margin-bottom:0;}
+.feat-float-row b{display:block;font-size:11.5px;color:var(--violet);margin-bottom:3px;}
+.feat-float-row p{font-size:12px;}
+
+/* paneles secundarios */
+.feat-grid-sm{display:flex;gap:24px;}
+.feat-panel-sm{
+  flex:1;min-width:0;background:#fff;border:1px solid rgba(28,28,30,.07);border-radius:24px;
+  padding:32px;box-shadow:0 1px 3px rgba(28,28,30,.04);transition:transform .35s var(--ease),box-shadow .35s var(--ease);
+}
+.feat-panel-sm:hover{transform:translateY(-4px);box-shadow:0 20px 36px -20px rgba(28,28,30,.18);}
+.feat-panel-sm h2{font-size:19px;margin-bottom:10px;color:var(--ink);}
+.feat-panel-sm p{font-size:14px;line-height:1.6;color:rgba(28,28,30,.62);margin-bottom:22px;}
+.feat-window-sm{padding:18px;}
+
+/* Calendario (secundario) */
+.feat-cal-strip{display:flex;gap:8px;}
+.feat-cal-day{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:6px;background:#fff;border:1px solid rgba(28,28,30,.07);border-radius:10px;padding:10px 4px;}
+.feat-cal-day span{font-family:var(--font-mono);font-size:9.5px;color:rgba(28,28,30,.45);}
+.feat-cal-day i{width:6px;height:6px;border-radius:50%;background:var(--c);display:block;}
+.feat-cal-today{background:linear-gradient(155deg,var(--violet),var(--orange) 140%);border-color:transparent;}
+.feat-cal-today span{color:rgba(255,255,255,.85);}
+
+/* Aprobaciones (secundario) */
+.feat-approve-card{display:flex;gap:14px;}
+.feat-approve-thumb{width:52px;height:52px;border-radius:12px;background:var(--c);flex-shrink:0;}
+.feat-approve-body{flex:1;min-width:0;}
+.feat-approve-status{display:inline-block;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.04em;text-transform:uppercase;background:rgba(232,91,30,.12);color:var(--orange);padding:3px 9px;border-radius:100px;margin-bottom:8px;}
+.feat-approve-body b{display:block;font-size:13.5px;color:var(--ink);margin-bottom:3px;}
+.feat-approve-body p{font-size:11.5px;color:rgba(28,28,30,.5);margin-bottom:12px;}
+.feat-approve-actions{display:flex;gap:8px;}
+.feat-approve-btn{font-family:var(--font-mono);font-size:10.5px;padding:7px 13px;border-radius:100px;}
+.feat-approve-btn.reject{background:rgba(28,28,30,.06);color:rgba(28,28,30,.55);}
+.feat-approve-btn.approve{background:var(--violet);color:#fff;}
+
 /* ---------- modulos ---------- */
 .mod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
 .mod-card{
@@ -578,6 +681,14 @@ footer{background:transparent;padding:56px 0 32px;border-top:1px solid rgba(28,2
   .hero-ctas{flex-direction:column;align-items:stretch;}
   .hero-ctas a{justify-content:center;}
 
+  /* --- features destacados: paneles a una columna --- */
+  .feat-panel,.feat-panel-reverse{flex-direction:column;align-items:stretch;gap:28px;padding:32px;}
+  .feat-text{flex:none;max-width:none;}
+  .feat-grid-sm{flex-direction:column;}
+  .feat-ai-grid{gap:10px;}
+  .feat-kpi-row{gap:8px;}
+  .feat-kpi{padding:8px 10px;}
+
   /* --- mockup del calendario: achicamos todo proporcionalmente --- */
   .mockup{padding:14px;}
   .cal-cell{height:30px;font-size:9.5px;padding-top:4px;}
@@ -668,6 +779,17 @@ footer{background:transparent;padding:56px 0 32px;border-top:1px solid rgba(28,2
 
   .hero{padding:104px 0 44px;}
   .hero-title{font-size:clamp(26px,8vw,36px);}
+
+  /* --- features destacados --- */
+  .feat-intro{font-size:15px;margin-bottom:36px;}
+  .feat-panel,.feat-panel-reverse{padding:22px;border-radius:22px;gap:22px;}
+  .feat-panel-sm{padding:22px;border-radius:20px;}
+  .feat-window{padding:16px;}
+  .feat-ai-card{padding:12px;}
+  .feat-kpi-row{grid-template-columns:repeat(2,1fr);}
+  .feat-float{padding:14px 16px;}
+  .feat-ig-stats{gap:12px;}
+  .feat-approve-actions{flex-wrap:wrap;}
 
   .mod-card{width:88%;min-width:88%;}
   /* en celular, el modal de módulo queda solo con texto (sin foto ni video) */
