@@ -215,6 +215,23 @@ const io = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
 }, {threshold:.15});
 document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+// ---------- permisos por rol: mockup interactivo ----------
+document.querySelectorAll('.perm-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const on = btn.classList.toggle('on');
+    btn.setAttribute('aria-pressed', on);
+  });
+});
+const permReset = document.getElementById('permReset');
+if(permReset){
+  permReset.addEventListener('click', () => {
+    document.querySelectorAll('.perm-toggle').forEach(btn => {
+      const on = btn.dataset.default === 'on';
+      btn.classList.toggle('on', on);
+      btn.setAttribute('aria-pressed', String(on));
+    });
+  });
+}
 // ---------- formulario de contacto → WhatsApp ----------
 const contactForm = document.getElementById('contactForm');
 if(contactForm){

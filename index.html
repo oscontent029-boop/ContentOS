@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
     <nav class="nav" id="nav">
@@ -235,7 +235,7 @@
           <p>Planificá el mes y revisá el orden y la estética del perfil, con las piezas planificadas mezcladas entre los posts reales.</p>
         </div>
         <div class="feat-visual" aria-hidden="true">
-          <div class="feat-window">
+          <div class="feat-window feat-window-ig">
             <div class="feat-window-head">
               <span class="feat-dot" style="--d:var(--violet-light)"></span>
               <span class="feat-dot" style="--d:var(--orange-light)"></span>
@@ -251,15 +251,12 @@
               </div>
             </div>
             <div class="feat-ig-grid">
-              <div class="feat-ig-post" style="--c:var(--violet-light)"></div>
-              <div class="feat-ig-post" style="--c:var(--pink)"></div>
-              <div class="feat-ig-post feat-ig-planned" style="--c:var(--orange-light)"><span>Planificado</span></div>
-              <div class="feat-ig-post" style="--c:var(--cream)"></div>
-              <div class="feat-ig-post feat-ig-planned" style="--c:var(--violet-light)"><span>Planificado</span></div>
-              <div class="feat-ig-post" style="--c:var(--pink)"></div>
-              <div class="feat-ig-post" style="--c:var(--orange-light)"></div>
-              <div class="feat-ig-post feat-ig-planned" style="--c:var(--cream)"><span>Planificado</span></div>
-              <div class="feat-ig-post" style="--c:var(--violet-light)"></div>
+              <div class="feat-ig-post" style="--c:var(--violet-light)"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3.5"/><path d="M5.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/></svg></div>
+              <div class="feat-ig-post" style="--c:var(--pink)"><svg viewBox="0 0 24 24"><path d="M10 3h4v2.5l1.5 2V20a1 1 0 01-1 1h-5a1 1 0 01-1-1V7.5l1.5-2z"/><path d="M10 5.5h4"/></svg></div>
+              <div class="feat-ig-post feat-ig-planned" style="--c:var(--orange-light)"><svg viewBox="0 0 24 24"><path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6z"/></svg><span>Planificado</span></div>
+              <div class="feat-ig-post" style="--c:var(--cream)"><svg viewBox="0 0 24 24"><path d="M3 18l5-8 4 5 2-3 7 6z"/><circle cx="17" cy="7" r="2"/></svg></div>
+              <div class="feat-ig-post feat-ig-planned" style="--c:var(--violet-light)"><svg viewBox="0 0 24 24"><path d="M6 20c-1-7 3-13 12-15-1 9-5 14-12 15z"/><path d="M8 18c2-4 5-7 9-9"/></svg><span>Planificado</span></div>
+              <div class="feat-ig-post" style="--c:var(--pink)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.5 1.5M18.3 18.3l1.5 1.5M3 12h2M19 12h2M4.2 19.8l1.5-1.5M18.3 5.7l1.5-1.5"/></svg></div>
             </div>
           </div>
         </div>
@@ -527,6 +524,107 @@
     <h4>Cliente</h4><p>Entra a su portal simplificado y aprueba o rechaza sin ver el resto de la agencia.</p>
   </div>
 </div>
+
+    <div class="perm-block reveal">
+      <span class="feat-kicker">Permisos a medida</span>
+      <h3>Vos decidís exactamente qué ve y qué edita cada rol</h3>
+      <p class="perm-intro">Área por área, con control separado entre ver y editar. Esto es lo que configura el Administrador — probá tocar los interruptores:</p>
+      <div class="perm-table-wrap">
+        <table class="perm-table">
+          <thead>
+            <tr>
+              <th rowspan="2" scope="col" class="perm-th-area">Área</th>
+              <th rowspan="2" scope="col" class="perm-th-admin">Administrador<span class="perm-col-note">siempre todo</span></th>
+              <th colspan="2" scope="col">Community Manager</th>
+              <th colspan="2" scope="col">Diseñador</th>
+              <th colspan="2" scope="col">Copywriter</th>
+              <th colspan="2" scope="col">Analista</th>
+              <th colspan="2" scope="col">Cliente</th>
+            </tr>
+            <tr>
+              <th scope="col" class="perm-th-sub">Ver</th><th scope="col" class="perm-th-sub">Editar</th>
+              <th scope="col" class="perm-th-sub">Ver</th><th scope="col" class="perm-th-sub">Editar</th>
+              <th scope="col" class="perm-th-sub">Ver</th><th scope="col" class="perm-th-sub">Editar</th>
+              <th scope="col" class="perm-th-sub">Ver</th><th scope="col" class="perm-th-sub">Editar</th>
+              <th scope="col" class="perm-th-sub">Ver</th><th scope="col" class="perm-th-sub">Editar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Clientes / Marcas</th>
+              <td class="perm-admin"><span class="perm-check" aria-hidden="true">✓</span></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Community Manager: ver Clientes / Marcas"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Community Manager: editar Clientes / Marcas"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Diseñador: ver Clientes / Marcas"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Diseñador: editar Clientes / Marcas"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Copywriter: ver Clientes / Marcas"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Copywriter: editar Clientes / Marcas"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Analista: ver Clientes / Marcas"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Analista: editar Clientes / Marcas"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Cliente: ver Clientes / Marcas"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Cliente: editar Clientes / Marcas"><span class="perm-toggle-dot"></span></button></td>
+            </tr>
+            <tr>
+              <th scope="row">Calendario</th>
+              <td class="perm-admin"><span class="perm-check" aria-hidden="true">✓</span></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Community Manager: ver Calendario"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Community Manager: editar Calendario"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Diseñador: ver Calendario"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Diseñador: editar Calendario"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Copywriter: ver Calendario"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Copywriter: editar Calendario"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Analista: ver Calendario"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Analista: editar Calendario"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Cliente: ver Calendario"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Cliente: editar Calendario"><span class="perm-toggle-dot"></span></button></td>
+            </tr>
+            <tr>
+              <th scope="row">Centro de IA</th>
+              <td class="perm-admin"><span class="perm-check" aria-hidden="true">✓</span></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Community Manager: ver Centro de IA"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Community Manager: editar Centro de IA"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Diseñador: ver Centro de IA"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Diseñador: editar Centro de IA"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Copywriter: ver Centro de IA"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Copywriter: editar Centro de IA"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Analista: ver Centro de IA"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Analista: editar Centro de IA"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Cliente: ver Centro de IA"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Cliente: editar Centro de IA"><span class="perm-toggle-dot"></span></button></td>
+            </tr>
+            <tr>
+              <th scope="row">Aprobaciones</th>
+              <td class="perm-admin"><span class="perm-check" aria-hidden="true">✓</span></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Community Manager: ver Aprobaciones"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Community Manager: editar Aprobaciones"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Diseñador: ver Aprobaciones"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Diseñador: editar Aprobaciones"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Copywriter: ver Aprobaciones"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Copywriter: editar Aprobaciones"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Analista: ver Aprobaciones"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Analista: editar Aprobaciones"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Cliente: ver Aprobaciones"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle on" data-default="on" aria-pressed="true" aria-label="Cliente: editar Aprobaciones"><span class="perm-toggle-dot"></span></button></td>
+            </tr>
+            <tr>
+              <th scope="row">Contabilidad</th>
+              <td class="perm-admin"><span class="perm-check" aria-hidden="true">✓</span></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Community Manager: ver Contabilidad"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Community Manager: editar Contabilidad"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Diseñador: ver Contabilidad"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Diseñador: editar Contabilidad"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Copywriter: ver Contabilidad"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Copywriter: editar Contabilidad"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Analista: ver Contabilidad"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Analista: editar Contabilidad"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Cliente: ver Contabilidad"><span class="perm-toggle-dot"></span></button></td>
+              <td><button type="button" class="perm-toggle" data-default="off" aria-pressed="false" aria-label="Cliente: editar Contabilidad"><span class="perm-toggle-dot"></span></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button type="button" class="perm-reset" id="permReset">↺ Restablecer a los valores por defecto</button>
+    </div>
   </div>
 </section>
 <section class="section-graphite">
@@ -860,6 +958,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=8"></script>
+<script src="script.js?v=9"></script>
 </body>
 </html>
