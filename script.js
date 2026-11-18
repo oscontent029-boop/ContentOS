@@ -23,52 +23,6 @@ const roles = [
   {t:'Analista',d:'Sigue las métricas reales y arma los informes mensuales de cada marca.',long:'El Analista tiene acceso de solo lectura a las métricas, la IA de Métricas y los Informes de cada marca — su trabajo es leer los números e interpretarlos, no editar contenido.',can:['Acceso de solo lectura a métricas, IA de Métricas e Informes','Interpreta los números de cada marca','No edita contenido'],color:'var(--violet-light)',icon:'<path d="M4 19V10M11 19V5M18 19v-7"/><path d="M3 19h18"/>'},
   {t:'Cliente',d:'Entra a su portal simplificado y aprueba o rechaza sin ver el resto de la agencia.',long:'El Cliente accede únicamente a su Portal: ve las publicaciones de su propia marca (sin borradores) y las aprueba o rechaza con un motivo si corresponde. No ve nada más de la agencia — ni otras marcas, ni el equipo, ni la parte interna.',can:['Entra solo a su Portal','Ve las publicaciones de su marca (sin borradores)','Aprueba o rechaza con motivo','No ve otras marcas, ni el equipo, ni la parte interna'],color:'var(--pink)',icon:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>'},
 ];
-const plans = [
-  {name:'Starter',price:'US$0',tagline:'Freelancers y CM',badge:'',marcas:'3',usuarios:'1',
-   top:[{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'IA Estratégica y Campañas',on:false},{t:'Automatizaciones',on:false},{t:'Soporte prioritario',on:false}],
-   full:[{t:'Usuarios "Marca" ilimitados',on:true},{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'Métricas de Instagram',on:true},{t:'IA Estratégica y Campañas',on:false},{t:'Roles y permisos',on:false},{t:'Producción y tareas',on:false},{t:'Informes mensuales',on:false},{t:'Automatizaciones',on:false},{t:'Soporte',on:false}],
-   cta:'Contratar',ctaStyle:'outline'},
-  {name:'Agency',price:'US$0',tagline:'Agencias chicas',badge:'El más elegido',marcas:'10',usuarios:'5',
-   top:[{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'IA Estratégica y Campañas',on:true},{t:'Automatizaciones',on:true},{t:'Soporte prioritario',on:false}],
-   full:[{t:'Usuarios "Marca" ilimitados',on:true},{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'Métricas de Instagram',on:true},{t:'IA Estratégica y Campañas',on:true},{t:'Roles y permisos',on:true},{t:'Producción y tareas',on:true},{t:'Informes mensuales',on:true},{t:'Automatizaciones',on:true},{t:'Soporte',on:false}],
-   cta:'Contratar',ctaStyle:'filled',featured:true},
-  {name:'Agency Pro',price:'US$0',tagline:'Agencias con muchas marcas',badge:'',marcas:'30',usuarios:'15',
-   top:[{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'IA Estratégica y Campañas',on:true},{t:'Automatizaciones',on:true},{t:'Soporte prioritario',on:true}],
-   full:[{t:'Usuarios "Marca" ilimitados',on:true},{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'Métricas de Instagram',on:true},{t:'IA Estratégica y Campañas',on:true},{t:'Roles y permisos',on:true},{t:'Producción y tareas',on:true},{t:'Informes mensuales',on:true},{t:'Automatizaciones',on:true},{t:'Soporte prioritario',on:true}],
-   cta:'Contratar',ctaStyle:'outline'},
-  {name:'Enterprise',price:'A medida',tagline:'Agencias grandes',badge:'',marcas:'Ilimitadas',usuarios:'A medida',
-   top:[{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'IA Estratégica y Campañas',on:true},{t:'Automatizaciones',on:true},{t:'Soporte prioritario + implementación',on:true}],
-   full:[{t:'Usuarios "Marca" ilimitados',on:true},{t:'Calendario, marcas y aprobaciones',on:true},{t:'IA de Contenido y Banco de Ideas',on:true},{t:'Métricas de Instagram',on:true},{t:'IA Estratégica y Campañas',on:true},{t:'Roles y permisos',on:true},{t:'Producción y tareas',on:true},{t:'Informes mensuales',on:true},{t:'Automatizaciones',on:true},{t:'Soporte prioritario + implementación',on:true}],
-   cta:'Contactar',ctaStyle:'outline'},
-];
-
-const checkIcon = (on) => `<span class="plan-check ${on?'on':'off'}">${on?'✓':'—'}</span>`;
-const waPlan = (planName) => `https://wa.me/5493534134593?text=${encodeURIComponent('Hola, quiero contratar el plan '+planName+' de ContentOS')}`;
-
-// ---------- modal de plan ----------
-const planModal = document.getElementById('planModal');
-const planModalNum = document.getElementById('planModalNum');
-const planModalTitle = document.getElementById('planModalTitle');
-const planModalList = document.getElementById('planModalList');
-const planModalClose = document.getElementById('planModalClose');
-
-document.querySelectorAll('.plan-more').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const p = plans[Number(btn.dataset.index)];
-    planModalNum.textContent = p.price + (p.price.startsWith('US$') ? '/mes' : '');
-    planModalTitle.textContent = 'Plan ' + p.name;
-    planModalList.innerHTML = p.full.map(f => `<li class="${f.on?'':'off'}">${checkIcon(f.on)}${f.t}</li>`).join('');
-    planModal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  });
-});
-const closePlanModal = () => {
-  planModal.classList.remove('open');
-  document.body.style.overflow = '';
-};
-planModalClose.addEventListener('click', closePlanModal);
-planModal.addEventListener('click', (e) => { if(e.target === planModal) closePlanModal(); });
-
 // ---------- ver todos los módulos ----------
 const modShowMoreBtn = document.getElementById('modShowMoreBtn');
 if(modShowMoreBtn){
@@ -142,7 +96,7 @@ document.querySelectorAll('.mod-card').forEach(card => {
 });
 modModalClose.addEventListener('click', closeModModal);
 modModal.addEventListener('click', (e) => { if(e.target === modModal) closeModModal(); });
-document.addEventListener('keydown', (e) => { if(e.key === 'Escape'){ closeModModal(); closeRoleModal(); closePlanModal(); } });
+document.addEventListener('keydown', (e) => { if(e.key === 'Escape'){ closeModModal(); closeRoleModal(); } });
 
 // ---------- modal de rol ----------
 const roleModal = document.getElementById('roleModal');

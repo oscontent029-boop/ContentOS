@@ -420,56 +420,6 @@ section{padding:104px 0;position:relative;}
   color:var(--orange);margin-bottom:10px;display:block;
 }
 .team-info .team-phrase{font-size:13px;color:rgba(28,28,30,.6);line-height:1.5;font-style:italic;}
-/* ---------- planes ---------- */
-.plans-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
-.plan-card{
-  background:#FFFFFF;border:1px solid rgba(28,28,30,.08);border-radius:20px;
-  padding:28px 22px;box-shadow:0 1px 3px rgba(28,28,30,.04);
-  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s var(--ease);
-  display:flex;flex-direction:column;
-}
-.plan-card:hover{transform:translateY(-6px);box-shadow:0 20px 36px -16px rgba(28,28,30,.16);}
-.plan-card.plan-featured{
-  border:1.5px solid var(--violet-light);
-  box-shadow:0 8px 28px -12px rgba(92,27,87,.28);
-}
-.plan-card.plan-featured:hover{box-shadow:0 24px 40px -14px rgba(92,27,87,.32);}
-.plan-badge{
-  font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
-  color:var(--violet);background:rgba(92,27,87,.08);border-radius:100px;
-  padding:4px 10px;display:inline-block;margin-bottom:12px;width:fit-content;
-}
-.plan-name{font-size:17px;color:var(--ink);margin-bottom:6px;}
-.plan-price{font-family:var(--font-display);font-weight:800;font-size:28px;color:var(--ink);}
-.plan-price span{font-family:var(--font-body);font-weight:500;font-size:13px;color:rgba(28,28,30,.5);}
-.plan-tagline{font-size:12.5px;color:rgba(28,28,30,.5);margin-bottom:18px;}
-.plan-stats{display:flex;gap:14px;padding:14px 0;border-top:1px solid rgba(28,28,30,.08);border-bottom:1px solid rgba(28,28,30,.08);margin-bottom:16px;}
-.plan-stat{flex:1;}
-.plan-stat b{display:block;font-family:var(--font-display);font-size:16px;color:var(--ink);}
-.plan-stat span{font-size:11px;color:rgba(28,28,30,.5);}
-.plan-features{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px;flex:1;}
-.plan-features li{display:flex;gap:9px;font-size:13px;color:rgba(28,28,30,.72);align-items:flex-start;}
-.plan-features li.off{color:rgba(28,28,30,.35);}
-.plan-check{flex-shrink:0;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;margin-top:1px;}
-.plan-check.on{background:var(--cream);color:var(--violet);}
-.plan-check.off{background:rgba(28,28,30,.06);color:rgba(28,28,30,.3);}
-.plan-more{
-  background:none;color:var(--violet);font-size:12.5px;font-weight:600;text-align:left;
-  padding:0;margin-bottom:16px;text-decoration:underline;text-underline-offset:3px;
-}
-.plan-cta{
-  text-align:center;padding:13px 20px;border-radius:100px;font-weight:700;font-size:14px;
-  transition:transform .25s var(--ease),box-shadow .25s var(--ease);
-}
-.plan-cta.filled{background:linear-gradient(135deg,var(--orange),var(--orange-light));color:#fff;}
-.plan-cta.filled:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(232,91,30,.35);}
-.plan-cta.outline{background:transparent;border:1.5px solid rgba(28,28,30,.16);color:var(--ink);}
-.plan-cta.outline:hover{background:rgba(28,28,30,.04);}
-.plan-modal .mod-modal-body{padding:36px 36px 40px;}
-.plan-modal-list{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:20px;}
-.plan-modal-list li{display:flex;gap:12px;font-size:14.5px;color:rgba(28,28,30,.75);align-items:flex-start;}
-.plan-modal-list li.off{color:rgba(28,28,30,.4);}
-
 /* modal de rol — solo texto */
 .role-modal{max-width:560px;}
 .role-modal-body{padding:40px 36px 36px;}
@@ -622,10 +572,6 @@ footer{background:transparent;padding:56px 0 32px;border-top:1px solid rgba(28,2
   .team-card:hover{transform:translateY(-4px) !important;}
   .team-grid:hover .team-card:not(:hover){opacity:1;filter:none;}
 
-  /* --- planes --- */
-  .plans-grid{grid-template-columns:repeat(2,1fr);gap:14px;}
-  .plan-card{padding:22px 18px;}
-
   /* --- faq --- */
   .faq-q{font-size:14.5px;padding:18px 2px;}
 
@@ -639,7 +585,7 @@ footer{background:transparent;padding:56px 0 32px;border-top:1px solid rgba(28,2
   .footer-top{flex-direction:column;gap:28px;}
   .footer-cols{gap:32px;}
 
-  /* --- modales (módulo / rol / plan) --- */
+  /* --- modales (módulo / rol) --- */
   .mod-modal{max-width:94vw;max-height:92vh;}
   .mod-modal-body{padding:24px 22px 26px;}
   .mod-modal-body h3{font-size:20px;}
@@ -677,7 +623,6 @@ footer{background:transparent;padding:56px 0 32px;border-top:1px solid rgba(28,2
   .roles-grid{grid-template-columns:1fr;}
   .benefits-grid{grid-template-columns:1fr;}
   .team-grid{grid-template-columns:1fr;max-width:280px;margin:0 auto;}
-  .plans-grid{grid-template-columns:1fr;}
 
   .multi{padding:26px 18px;}
   .agency-chip{padding:12px 14px;}
