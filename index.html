@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ContentOS — El sistema operativo de tu agencia</title>
+<title>ContentOS — Plataforma para agencias y community managers</title>
 <link rel="canonical" href="https://contentos.com.ar/">
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
@@ -32,11 +32,73 @@
 <meta name="twitter:image" content="https://contentos.com.ar/favicon/og-image.png">
 
 <!-- Descripción para buscadores -->
-<meta name="description" content="ContentOS centraliza la gestión de marcas, contenido, producción, aprobaciones y métricas reales de Instagram para community managers y agencias.">
+<meta name="description" content="ContentOS es la plataforma argentina para agencias de marketing y community managers: planificá, generá con IA, producí, aprobá y medí el contenido de tus marcas en un solo lugar. Startup seleccionada por el Programa eXpande (UNVM).">
+<!-- Datos estructurados: le dicen a Google y a los buscadores con IA qué es ContentOS -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://contentos.com.ar/#organizacion",
+      "name": "ContentOS",
+      "alternateName": [
+        "Contentos",
+        "Content OS"
+      ],
+      "url": "https://contentos.com.ar/",
+      "logo": "https://contentos.com.ar/favicon/android-chrome-512x512.png",
+      "email": "soporte@contentos.com.ar",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Villa María, Córdoba, Argentina"
+      },
+      "areaServed": "AR",
+      "sameAs": [
+        "https://www.instagram.com/contentos_ar"
+      ],
+      "award": "Startup seleccionada en el Programa de Incubación eXpande (UNVM y AERCA), cohorte 2026/2027",
+      "subjectOf": {
+        "@type": "NewsArticle",
+        "headline": "“Programa eXpande”: 15 startups seleccionadas",
+        "url": "https://www.unvm.edu.ar/noticias/general/programa-expande-unvm-15-startups-seleccionadas/",
+        "datePublished": "2026-11-20",
+        "publisher": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Nacional de Villa María",
+          "url": "https://www.unvm.edu.ar/"
+        }
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://contentos.com.ar/#sitio",
+      "url": "https://contentos.com.ar/",
+      "name": "ContentOS",
+      "inLanguage": "es-AR",
+      "publisher": {
+        "@id": "https://contentos.com.ar/#organizacion"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ContentOS",
+      "url": "https://app.contentos.com.ar/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Plataforma para community managers y agencias que centraliza estrategia, producción, aprobación y analíticas con IA.",
+      "inLanguage": "es",
+      "publisher": {
+        "@id": "https://contentos.com.ar/#organizacion"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
     <nav class="nav" id="nav">
@@ -67,6 +129,10 @@
       <div class="hero-ctas">
 <a href="https://app.contentos.com.ar/login" class="btn-primary">Ingresá acá</a>       <a href="#como-funciona" class="btn-secondary">Ver cómo funciona</a>
       </div>
+      <a class="hero-respaldo" href="https://www.unvm.edu.ar/noticias/general/programa-expande-unvm-15-startups-seleccionadas/" target="_blank" rel="noopener">
+        <span class="hero-respaldo-sello">UNVM</span>
+        <span>Startup seleccionada por el <strong>Programa eXpande</strong> de la Universidad Nacional de Villa María y AERCA</span>
+      </a>
     </div>
     <div class="reveal in">
   <div class="mockup">
@@ -409,6 +475,7 @@
       <span class="eyebrow">Quiénes somos</span>
       <h2>La historia detrás de ContentOS</h2>
       <p>Somos cuatro estudiantes que unimos marketing digital y desarrollo de sistemas para resolver algo que vimos de cerca: las agencias chicas gestionando todo a los saltos, entre varias plataformas. Dos pensando en cómo lo vive una agencia día a día, y dos construyendo la tecnología para que eso deje de pasar.</p>
+      <p class="equipo-respaldo">En noviembre de 2026, ContentOS fue <strong>una de las 15 startups seleccionadas entre 24 proyectos</strong> para el Programa de Incubación eXpande, de la Incubadora de Empresas de la Universidad Nacional de Villa María (UNVM) y la Asociación de Empresarios Región Centro Argentino (AERCA), cohorte 2026/2027. <a href="https://www.unvm.edu.ar/noticias/general/programa-expande-unvm-15-startups-seleccionadas/" target="_blank" rel="noopener">Leé la nota de la UNVM →</a></p>
     </div>
 <div class="team-grid reveal-stagger" id="teamGrid">
   <a class="team-card" href="https://www.instagram.com/emilialupidi11/" target="_blank" rel="noopener" aria-label="Ver Instagram de Emilia Lupidi">
