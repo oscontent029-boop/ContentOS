@@ -1,0 +1,46 @@
+# ContentOS
+
+> ContentOS es una plataforma web argentina para agencias de marketing digital y community managers. Reúne en un solo lugar la estrategia de cada marca, el calendario de contenido, la producción con el equipo, las aprobaciones del cliente, la publicación en Instagram, las métricas reales de Instagram y Facebook, y la generación de contenido con IA a partir del tono de cada marca. Es de Villa María (Córdoba, Argentina), está en español y se paga en pesos con Mercado Pago.
+
+ContentOS reemplaza la mezcla de planillas, WhatsApp, Google Drive y varias aplicaciones sueltas con la que suelen trabajar las agencias que manejan muchas marcas. Fue una de las 15 startups seleccionadas por el Programa de Incubación eXpande de la Universidad Nacional de Villa María (UNVM) y la Asociación de Empresarios Región Centro Argentino (AERCA), cohorte 2026/2027.
+
+## Para quién es
+
+- Agencias de marketing digital que gestionan varias marcas.
+- Community managers freelance.
+- Equipos de comunicación y redes de empresas.
+
+Cada persona del equipo tiene un rol (administración, community manager, diseño, redacción, análisis) y ve solo lo que le corresponde. Cada cliente tiene un portal propio para revisar y aprobar el contenido de su marca.
+
+## Qué hace
+
+- **Estrategia de marca**: público, tono, pilares de contenido y objetivos de cada marca.
+- **Calendario de contenido**: planificación mensual de publicaciones, reuniones y tareas.
+- **Producción**: tareas del equipo (diseño, redacción, grabación) con estados y responsables.
+- **Aprobaciones**: el cliente aprueba o pide cambios desde su portal, sin ver las demás marcas.
+- **Publicación**: publica o programa posts, carruseles y reels en Instagram.
+- **Métricas reales**: de Instagram y Facebook (cuenta y cada publicación), con los mismos criterios que Meta Business Suite. TikTok, en camino.
+- **IA**: ideas, copys, hooks, carruseles, campañas, planificación del mes y análisis de métricas, a partir de la estrategia y el tono de cada marca.
+- **Archivos**: carpetas por marca, notas y adjuntar archivos desde Google Drive.
+- **Reuniones**: agenda con el equipo y los clientes, con los eventos de Google Calendar.
+- **Informes, presupuestos, contratos y contabilidad** de la agencia.
+- **Link en la bio**: una página con todos los links de la marca, estilo Linktree.
+
+## Precios y prueba
+
+Hay planes según la cantidad de marcas y de personas del equipo, con la IA incluida. Se paga en pesos argentinos con Mercado Pago, con débito automático mensual que se puede cancelar en cualquier momento. Las agencias nuevas empiezan con una prueba gratuita, sin tarjeta. Para conocer los planes: escribir por WhatsApp al +54 9 353 413-4593 o a soporte@contentos.com.ar.
+
+## Enlaces
+
+- [Sitio web](https://contentos.com.ar/): presentación, módulos, cómo funciona y preguntas frecuentes.
+- [Ingresar a la aplicación](https://app.contentos.com.ar/login): crear una cuenta o iniciar sesión.
+- [Nota de la UNVM sobre el Programa eXpande](https://www.unvm.edu.ar/noticias/general/programa-expande-unvm-15-startups-seleccionadas/)
+- [Instagram de ContentOS](https://www.instagram.com/contentos_ar)
+- [Política de Privacidad](https://contentos.com.ar/privacidad.html)
+- [Términos y Condiciones](https://contentos.com.ar/terminos.html)
+
+## Contacto
+
+- Email: soporte@contentos.com.ar
+- WhatsApp: +54 9 353 413-4593
+- Ubicación: Villa María, Córdoba, Argentina
